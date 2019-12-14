@@ -1,5 +1,6 @@
 christmas = {
 	-- toggle with "/christmas_toggle"
+	-- persisted in mod_storage across restarts
 	is_christmas = false,
 
 	loot = {}, -- { name="default:stone", count=1 }

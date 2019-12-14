@@ -38,7 +38,6 @@ end
 local timer = 0
 minetest.register_globalstep(function(dtime)
 	if not christmas.is_christmas then
-		timer = 0
 		return
 	end
 
