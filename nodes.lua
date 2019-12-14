@@ -9,22 +9,20 @@ local function register_present(name, description, colorCode)
 		},
 	  groups = {
 			crumbly=3,
+			present=1,
 			not_in_creative_inventory=1
-		}
+		},
+
+		drop = "",
+
+		can_dig = function(pos)
+			local item = christmas.loot[math.random(1, #christmas.loot)]
+			minetest.add_item(pos, item)
+			return true
+		end
 	})
 end
 
-colours = {
-	-- RGB Prime Colours --
-	{name="red", code="FF000099", description="Red", dye="red"},
-	{name="green", code="00FF0099", description="Green", dye="green"},
-	{name="blue", code="0000FF99", description="Blue", dye="blue"},
-	-- RGB Secondary Colour --
-	{name="yellow", code="FFFF0099", description="Yellow", dye="yellow"},
-	{name="magenta", code="FF00FF99", description="Magenta", dye="magenta"},
-	{name="cyan", code="00FFFF99", description="Cyan", dye="cyan"}
-}
-
-for i,colour in ipairs(colours) do
+for i,colour in ipairs(christmas.present_colours) do
 	register_present(colour.name, colour.description, colour.code)
 end
