@@ -62,4 +62,4 @@ minetest.register_on_mods_loaded(function()
 	register_loot("shields:shield_mithril", 1)
 
 	register_loot("multitools:multitool_mithril", 1)
-end
+end)
