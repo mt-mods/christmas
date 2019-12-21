@@ -18,7 +18,8 @@ local function register_present(name, description, colorCode)
 		can_dig = function(pos)
 			local item = christmas.loot[math.random(1, #christmas.loot)]
 			minetest.add_item(pos, item)
-			return true
+			minetest.remove_node(pos)
+			return false
 		end
 	})
 end
