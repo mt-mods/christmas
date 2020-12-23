@@ -4,7 +4,7 @@ christmas.is_christmas = storage:get_int("christmas") == 1
 
 minetest.register_chatcommand("christmas_toggle", {
 	description = "toggles the christmas mode",
-	privs = {server=true},
+	privs = {server = true},
 	func = function(name)
 		christmas.is_christmas = not christmas.is_christmas
 
@@ -16,7 +16,7 @@ minetest.register_chatcommand("christmas_toggle", {
 			storage:set_int("christmas", 1)
 		end
 
-		minetest.log("warning", "Player " .. name .. " toggle christmas mode, new mode: " .. txt)
+		minetest.log("warning", "Player " .. name .. " " .. txt .. " christmas mode!")
 
 		return true, "Christmas: " .. txt
 	end

@@ -1,7 +1,7 @@
 
 local function register_loot(name, count)
 	if minetest.registered_items[name] then
-		table.insert(christmas.loot, { name=name, count=count })
+		table.insert(christmas.loot, {name = name, count = count})
 	end
 end
 
