@@ -18,7 +18,7 @@ minetest.register_on_mods_loaded(function()
 	register_loot("default:mese", 1)
 	register_loot("default:mese_crystal", 5)
 	register_loot("default:obsidian", 5)
-	
+
 	register_loot("moreores:silver_ingot", 5)
 	register_loot("moreores:silver_block", 1)
 	register_loot("moreores:mithril_ingot", 1)
@@ -36,9 +36,9 @@ minetest.register_on_mods_loaded(function()
 	register_loot("ethereal:banana", 1)
 	register_loot("ethereal:orange", 1)
 	register_loot("ethereal:strawberry", 1)
-	
+
 	register_loot("cherrytree:cherries", 2)
-	
+
 	register_loot("homedecor:plasma_lamp_14", 1)
 	register_loot("homedecor:soda_can", 1)
 	register_loot("homedecor:toilet", 1)
@@ -49,7 +49,7 @@ minetest.register_on_mods_loaded(function()
 	register_loot("technic:cnc", 1)
 	register_loot("technic:stainless_steel_block", 1)
 	register_loot("technic:lv_lamp", 1)
-	
+
 	register_loot("mobs:chicken_feather", 1)
 	register_loot("mobs:hairball", 5)
 	register_loot("mobs_animal:rat", 1)
@@ -57,7 +57,7 @@ minetest.register_on_mods_loaded(function()
 	register_loot("mobs:cheeseblock", 1)
 	register_loot("mobs:honey_block", 1)
 	register_loot("mobs:meatblock", 1)
-	
+
 	register_loot("pandorabox_custom:super_fertiliser", 5)
 
 	register_loot("farming:bread", 5)

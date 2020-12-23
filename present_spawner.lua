@@ -13,7 +13,7 @@ minetest.register_node("christmas:present_spawner", {
 		timer:start(1)
 	end,
 
-	on_timer = function(pos, elapsed)
+	on_timer = function(pos)
 		local timer = minetest.get_node_timer(pos)
 		if christmas.is_christmas then
 			-- random interval

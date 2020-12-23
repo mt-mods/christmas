@@ -18,6 +18,6 @@ local function register_present(name, description, color)
 	})
 end
 
-for i,colour in ipairs(christmas.present_colours) do
+for _,colour in pairs(christmas.present_colours) do
 	register_present(colour.name, colour.description, colour.code)
 end
