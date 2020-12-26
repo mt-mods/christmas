@@ -14,7 +14,7 @@ Adds snow and presents for the [Minetest Engine](https://www.minetest.net).
 
 ### Code
 
-- Don't care `¯\_(ツ)_/¯`
+MIT
 
 ## Textures
 
