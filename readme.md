@@ -1,5 +1,7 @@
 # Christmas
 
+[![luacheck](https://github.com/mt-mods/christmas/workflows/luacheck/badge.svg)](https://github.com/mt-mods/christmas/actions)
+
 Adds snow and presents for the [Minetest Engine](https://www.minetest.net).
 
 ## Chatcommands
