@@ -8,6 +8,7 @@ local function register_present(name, description, color)
 			"christmas_present.png^[colorize:#" ..color.. "^christmas_bow_side.png"
 		},
 		groups = {crumbly = 3, present = 1, not_in_creative_inventory = 1},
+		is_ground_content = false,
 		drop = "",
 		can_dig = function(pos)
 			local item = christmas.loot[math.random(#christmas.loot)]

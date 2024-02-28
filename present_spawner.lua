@@ -7,6 +7,7 @@ minetest.register_node("christmas:present_spawner", {
 		"default_steel_block.png^christmas_bow_side.png"
 	},
 	groups = {crumbly = 3, not_in_creative_inventory = 1},
+	is_ground_content = false,
 
 	on_construct = function(pos)
 		local timer = minetest.get_node_timer(pos)
